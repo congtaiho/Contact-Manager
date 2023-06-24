@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#E65100"
+        android:layout_weight="10">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_weight="80"
+            android:text="Contact Manager"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="10">
+        <Button
+            android:id="@+id/btn_show_all_contact"
+            android:background="#FFE1D0"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="18"
+            android:text="All"/>
+
+        <Button
+            android:id="@+id/btn_show_amis_contact"
+            android:background="#FFE1D0"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="27"
+            android:text="Friends"/>
+        <Button
+            android:id="@+id/btn_show_famille_contact"
+            android:background="#FFE1D0"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="28"
+            android:text="Families"/>
+        <Button
+            android:id="@+id/btn_show_collegues_contact"
+            android:layout_width="0dp"
+            android:background="#FFE1D0"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="32"
+            android:text="Collegues"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="10">
+
+        <SearchView
+            android:id="@+id/sv_search_contact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#D5EDFF"
+            android:queryHint="Enter your contact"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="60">
+
+        <LinearLayout
+            android:id="@+id/ll_show_list_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_add_contact"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:text="Add Contact"
+        android:background="@color/green"
+        android:textSize="20dp"/>
+
+
+</LinearLayout>

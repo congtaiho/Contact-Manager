@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="75">
+
+        <ImageView
+            android:id="@+id/iv_image_contact_update"
+            android:layout_width="0dp"
+            android:layout_height="135dp"
+            android:layout_weight="40"
+            android:src="@drawable/icon_person">
+
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="60">
+
+            <EditText
+                android:id="@+id/ed_nom_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nom"/>
+
+            <EditText
+                android:id="@+id/ed_phone_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone number"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:text="Type contact: "
+                    android:textSize="16dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/sn_update_type_contact"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25">
+        <Button
+            android:id="@+id/btn_update_contact"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="70"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="Update"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
