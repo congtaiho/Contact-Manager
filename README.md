@@ -5,6 +5,8 @@
 This app was developed as part of an Android course final project.
 Simple contact management application with add-edit-delete-change avatar functions and calling and messaging functions. Using SQLite database.
 
+## The functions of the program are as follows:
+
 #### Add 
 ![Screenshot 2023-06-24 114524](https://github.com/congtaiho/Contact-Manager/assets/132761655/ca58c4b1-6489-475a-b217-94b523c8b84f)
 ![add2](https://github.com/congtaiho/Contact-Manager/assets/132761655/c204f1b2-a65f-4bec-af53-e41e14818685)
